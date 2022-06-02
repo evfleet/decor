@@ -1,13 +1,35 @@
-import React from 'react';
-
-import ThemeContext from '../contexts/ThemeContext';
+import React, { createContext, useState } from 'react';
 
 interface ThemeProviderProps {
   children: React.ReactNode;
+  theme: any;
 }
 
-const ThemeProvider: React.FC<ThemeProviderProps> = ({ children }) => {
-  return <ThemeContext.Provider value={{}}>{children}</ThemeContext.Provider>;
+export const ThemeContext = createContext<any>(null);
+
+const defaultTheme = {};
+
+const ThemeProvider: React.FC<ThemeProviderProps> = ({ children, theme }) => {
+  const [decorTheme, setDecorTheme] = useState('light');
+
+  if (theme) {
+    // combine themes
+    setDecorTheme({
+      ...defaultTheme,
+      ...theme
+    });
+  }
+
+  return (
+    <ThemeContext.Provider
+      value={{
+        theme: decorTheme,
+        setTheme: setDecorTheme
+      }}
+    >
+      {children}
+    </ThemeContext.Provider>
+  );
 };
 
 export default ThemeProvider;
