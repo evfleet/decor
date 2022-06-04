@@ -21,6 +21,7 @@ importers:
       '@storybook/addon-essentials': ^6.5.6
       '@storybook/addon-interactions': ^6.5.6
       '@storybook/addon-links': ^6.5.6
+      '@storybook/addon-viewport': ^6.5.6
       '@storybook/builder-webpack4': ^6.5.6
       '@storybook/manager-webpack4': ^6.5.6
       '@storybook/react': ^6.5.6
@@ -59,6 +60,7 @@ importers:
       '@storybook/addon-essentials': 6.5.6_zgirmji727x42laondumntt6gi
       '@storybook/addon-interactions': 6.5.6_sc4qirhpvdyp3w6jrj6l3hpdua
       '@storybook/addon-links': 6.5.6_ef5jwxihqo6n7gxfmzogljlgcm
+      '@storybook/addon-viewport': 6.5.6_ef5jwxihqo6n7gxfmzogljlgcm
       '@storybook/builder-webpack4': 6.5.6_u2exkxizvkyextcvjs2xzsijbe
       '@storybook/manager-webpack4': 6.5.6_u2exkxizvkyextcvjs2xzsijbe
       '@storybook/react': 6.5.6_v7b66ryfcudj5ih4hia5gnssim
@@ -12846,7 +12848,7 @@ packages:
     resolution: {integrity: sha512-3ouUOpQhtgrbOa17J7+uxOTpITYWaGP7/AhoR3+A+/1e9skrzelGi/dXzEYyvbxubEF6Wn2ypscTKiKJFFn1ag==}
 
   /process/0.11.10:
-    resolution: {integrity: sha1-czIwDoQBYb2j5podHZGn1LwW8YI=}
+    resolution: {integrity: sha512-cdGef/drWFoydD1JsMzuFf8100nZl+GT+yacc2bEced5f9Rjk4z+WtFUTBu9PhOi9j/jfmBPu0mMEY4wIdAF8A==}
     engines: {node: '>= 0.6.0'}
     dev: true
 
