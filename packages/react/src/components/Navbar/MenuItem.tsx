@@ -1,6 +1,6 @@
 import React from 'react';
 
-const NavMenuItem = () => {
+const NavMenuItem: React.FC = () => {
   return (
     <div>
       <h1>NavMenuItem</h1>

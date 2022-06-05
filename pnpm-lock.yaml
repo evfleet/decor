@@ -50,12 +50,8 @@ importers:
       ts-jest: ^28.0.3
       typescript: ^4.7.2
     dependencies:
-<<<<<<< HEAD
-      '@headlessui/react': 1.6.4_ef5jwxihqo6n7gxfmzogljlgcm
-      styled-components: 5.3.5_ef5jwxihqo6n7gxfmzogljlgcm
-=======
+      '@headlessui/react': 1.6.4_sfoxds7t5ydpegc3knd667wn6m
       styled-components: 5.3.5_sfoxds7t5ydpegc3knd667wn6m
->>>>>>> 03a87c56b3b5f8670c33ff7c1d5bc1ec6de3adba
     devDependencies:
       '@babel/core': 7.18.2
       '@rollup/plugin-commonjs': 22.0.0_rollup@2.75.4
@@ -2473,15 +2469,15 @@ packages:
     dependencies:
       '@hapi/hoek': 9.3.0
 
-  /@headlessui/react/1.6.4_ef5jwxihqo6n7gxfmzogljlgcm:
+  /@headlessui/react/1.6.4_sfoxds7t5ydpegc3knd667wn6m:
     resolution: {integrity: sha512-0yqz1scwbFtwljmbbKjXsSGl5ABEYNICVHZnMCWo0UtOZodo2Tpu94uOVgCRjRZ77l2WcTi2S0uidINDvG7lsA==}
     engines: {node: '>=10'}
     peerDependencies:
       react: ^16 || ^17 || ^18
       react-dom: ^16 || ^17 || ^18
     dependencies:
-      react: 18.1.0
-      react-dom: 18.1.0_react@18.1.0
+      react: 17.0.2
+      react-dom: 17.0.2_react@17.0.2
     dev: false
 
   /@istanbuljs/load-nyc-config/1.1.0:
