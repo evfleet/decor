@@ -9,6 +9,9 @@
     "storybook:build": "build-storybook",
     "test": "jest"
   },
+  "dependencies": {
+    "styled-components": "^5.3.5"
+  },
   "devDependencies": {
     "@babel/core": "^7.18.2",
     "@rollup/plugin-commonjs": "^22.0.0",
@@ -37,8 +40,8 @@
     "jest": "^28.1.0",
     "jest-environment-jsdom": "^28.1.0",
     "prettier": "^2.6.2",
-    "react": "^18.0.0",
-    "react-dom": "^18.0.0",
+    "react": "^17.0.0",
+    "react-dom": "^17.0.0",
     "rollup": "^2.75.4",
     "rollup-plugin-dts": "^4.2.2",
     "rollup-plugin-peer-deps-external": "^2.2.4",
@@ -47,16 +50,13 @@
     "typescript": "^4.7.2"
   },
   "peerDependencies": {
-    "react": "^18.0.0",
-    "react-dom": "^18.0.0"
+    "react": "^17.0.0",
+    "react-dom": "^17.0.0"
   },
   "main": "dist/cjs/index.js",
   "module": "dist/esm/index.js",
   "types": "dist/index.d.ts",
   "files": [
     "dist"
-  ],
-  "dependencies": {
-    "styled-components": "^5.3.5"
-  }
+  ]
 }
