@@ -1,6 +1,6 @@
 import { INITIAL_VIEWPORTS } from '@storybook/addon-viewport';
 
-console.log('INITIAL_VIEWPORTS', INITIAL_VIEWPORTS);
+import ThemeProvider from '../src/providers/ThemeProvider';
 
 export const parameters = {
   actions: { argTypesRegex: '^on[A-Z].*' },
@@ -15,3 +15,11 @@ export const parameters = {
     defaultViewport: 'iphone6'
   }
 };
+
+export const decorators = [
+  (Story) => (
+    <ThemeProvider>
+      <Story />
+    </ThemeProvider>
+  )
+];
