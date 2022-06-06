@@ -10,6 +10,7 @@
     "test": "jest"
   },
   "dependencies": {
+    "@headlessui/react": "^1.6.4",
     "styled-components": "^5.3.5"
   },
   "devDependencies": {

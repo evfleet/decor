@@ -1,5 +1,7 @@
 import React, { createContext, useState } from 'react';
 
+import Fonts from '../styles/Fonts';
+
 interface ThemeProviderProps {
   children: React.ReactNode;
   theme: any;
@@ -27,6 +29,7 @@ const ThemeProvider: React.FC<ThemeProviderProps> = ({ children, theme }) => {
         setTheme: setDecorTheme
       }}
     >
+      <Fonts />
       {children}
     </ThemeContext.Provider>
   );
