@@ -7,10 +7,6 @@ const Fonts = createGlobalStyle`
     font-family: 'Roboto';
     src: url(${Roboto}) format('truetype');
   }
-
-  * {
-    font-family: 'Roboto', sans-serif;
-  }
 `;
 
 export default Fonts;
