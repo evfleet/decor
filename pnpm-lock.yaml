@@ -4535,18 +4535,6 @@ packages:
       redent: 3.0.0
     dev: true
 
-<<<<<<< HEAD
-  /@testing-library/react/13.3.0_sfoxds7t5ydpegc3knd667wn6m:
-    resolution: {integrity: sha512-DB79aA426+deFgGSjnf5grczDPiL4taK3hFaa+M5q7q20Kcve9eQottOG5kZ74KEr55v0tU2CQormSSDK87zYQ==}
-    engines: {node: '>=12'}
-    peerDependencies:
-      react: ^18.0.0
-      react-dom: ^18.0.0
-    dependencies:
-      '@babel/runtime': 7.18.3
-      '@testing-library/dom': 8.13.0
-      '@types/react-dom': 18.0.5
-=======
   /@testing-library/react/12.1.5_sfoxds7t5ydpegc3knd667wn6m:
     resolution: {integrity: sha512-OfTXCJUFgjd/digLUuPxa0+/3ZxsQmE7ub9kcbW/wi96Bh3o/p5vrETcBGfP17NWPGqeYYl5LTRpwyGoMC4ysg==}
     engines: {node: '>=12'}
@@ -4557,7 +4545,6 @@ packages:
       '@babel/runtime': 7.18.3
       '@testing-library/dom': 8.13.0
       '@types/react-dom': 17.0.17
->>>>>>> ccfc1567851044a50dd25691545940cfc6ed8e89
       react: 17.0.2
       react-dom: 17.0.2_react@17.0.2
     dev: true
@@ -4846,15 +4833,12 @@ packages:
     resolution: {integrity: sha512-EEhsLsD6UsDM1yFhAvy0Cjr6VwmpMWqFBCb9w07wVugF7w9nfajxLuVmngTIpgS6svCnm6Vaw+MZhoDCKnOfsw==}
     dev: false
 
-<<<<<<< HEAD
-=======
   /@types/react-dom/17.0.17:
     resolution: {integrity: sha512-VjnqEmqGnasQKV0CWLevqMTXBYG9GbwuE6x3VetERLh0cq2LTptFE73MrQi2S7GkKXCf2GgwItB/melLnxfnsg==}
     dependencies:
       '@types/react': 17.0.45
     dev: true
 
->>>>>>> ccfc1567851044a50dd25691545940cfc6ed8e89
   /@types/react-dom/18.0.5:
     resolution: {integrity: sha512-OWPWTUrY/NIrjsAPkAk1wW9LZeIjSvkXRhclsFO8CZcZGCOg2G0YZy4ft+rOyYxy8B7ui5iZzi9OkDebZ7/QSA==}
     dependencies:
@@ -4887,8 +4871,6 @@ packages:
       '@types/react': 18.0.10
     dev: true
 
-<<<<<<< HEAD
-=======
   /@types/react/17.0.45:
     resolution: {integrity: sha512-YfhQ22Lah2e3CHPsb93tRwIGNiSwkuz1/blk4e6QrWS0jQzCSNbGLtOEYhPg02W0yGTTmpajp7dCTbBAMN3qsg==}
     dependencies:
@@ -4897,7 +4879,6 @@ packages:
       csstype: 3.1.0
     dev: true
 
->>>>>>> ccfc1567851044a50dd25691545940cfc6ed8e89
   /@types/react/18.0.10:
     resolution: {integrity: sha512-dIugadZuIPrRzvIEevIu7A1smqOAjkSMv8qOfwPt9Ve6i6JT/FQcCHyk2qIAxwsQNKZt5/oGR0T4z9h2dXRAkg==}
     dependencies:

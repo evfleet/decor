@@ -10,13 +10,19 @@ export interface TextProps {
   decoration?: CSS.Property.TextDecoration;
 }
 
-export const Text: React.FC<TextProps> = ({ as = 'p', casing, children }) => {
-  const TextComponent = styled[as]`
-    font-family: 'Roboto', sans-serif;
-    ${casing && `text-transform: ${casing};`}
-  `;
+const String = styled.p`
+  font-family: 'Roboto', sans-serif;
+  ${({ align }: TextProps) => align && `text-align: ${align};`}
+  ${({ casing }: TextProps) => casing && `text-transform: ${casing};`}
+  ${({ decoration }: TextProps) => decoration && `text-decoration: ${decoration};`}
+`;
 
-  return <TextComponent>{children}</TextComponent>;
+export const Text: React.FC<TextProps> = ({ as = 'p', align, casing, decoration, children }) => {
+  return (
+    <String as={as} align={align} casing={casing} decoration={decoration}>
+      {children}
+    </String>
+  );
 };
 
 export default Text;
