@@ -106,8 +106,9 @@ dist
 
 # Docusaurus cache and generated files
 .docusaurus
-.cache-loader
-build/
+
+# Astro generated types
+.astro/
 
 # Serverless directories
 .serverless/
