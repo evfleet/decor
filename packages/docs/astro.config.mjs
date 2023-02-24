@@ -3,9 +3,6 @@ import react from "@astrojs/react";
 
 // https://astro.build/config
 export default defineConfig({
-  integrations: [
-    // Enable React for the Algolia search component.
-    react(),
-  ],
+  integrations: [react()],
   site: `https://astro.build`,
 });
