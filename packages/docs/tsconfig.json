@@ -1,15 +1,8 @@
 {
+  "extends": "astro/tsconfigs/strict",
   "compilerOptions": {
-    "allowJs": true,
-    "esModuleInterop": true,
-    "jsx": "react",
-    "lib": ["DOM"],
-    "noEmit": true,
-    "types": ["@docusaurus/module-type-aliases"],
-    "baseUrl": ".",
-    "paths": {
-      "@site/*": ["./*"]
-    },
-    "skipLibCheck": true
+    "jsx": "preserve",
+    "skipLibCheck": true,
+    "strictNullChecks": true
   }
 }
