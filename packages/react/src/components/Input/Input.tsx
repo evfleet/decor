@@ -4,8 +4,12 @@ export interface InputProps {
   type: string;
 }
 
-const Input = ({ type = "text" }: InputProps) => {
-  return <input type={type} />;
-};
+const Input = React.forwardRef<HTMLInputElement, InputProps>((props, ref) => {
+  return (
+    <div>
+      <input ref={ref} />
+    </div>
+  );
+});
 
 export default Input;
