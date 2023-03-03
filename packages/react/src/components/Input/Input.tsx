@@ -1,13 +1,13 @@
-import React from "react";
+import React, { FC, InputHTMLAttributes } from "react";
 
-export interface InputProps {
+export interface InputProps extends InputHTMLAttributes<HTMLInputElement> {
   type: string;
 }
 
 const Input = React.forwardRef<HTMLInputElement, InputProps>((props, ref) => {
   return (
     <div>
-      <input ref={ref} />
+      <input ref={ref} {...props} />
     </div>
   );
 });
