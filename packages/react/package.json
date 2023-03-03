@@ -1,5 +1,5 @@
 {
-  "name": "decor",
+  "name": "@evfleet/decor",
   "author": "Evan Fleet",
   "main": "dist/cjs/index.js",
   "module": "dist/esm/index.js",
