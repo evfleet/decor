@@ -133,5 +133,6 @@ dist
 .pnp.*
 
 # Local files
+playground/
 notes.*
 todos.*
