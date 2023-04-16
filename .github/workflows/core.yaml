@@ -28,9 +28,14 @@ jobs:
           registry-url: 'https://registry.npmjs.org'
 
       - name: Install dependencies
-        run: pnpm install --no-frozen-lockfile && pnpm run build
+        run: |
+          cd packages/core
+          pnpm install --no-frozen-lockfile 
+          pnpm run build
         
       - name: Publish package
-        run: npm publish
+        run: |
+          cd packages/core
+          npm publish
         env:
           NODE_AUTH_TOKEN: ${{ secrets.NPM_TOKEN }}
