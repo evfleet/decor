@@ -1,0 +1,30 @@
+name: 'Core'
+
+on:
+  push:
+    branches:
+      - main
+    paths:
+      - 'packages/core/**'
+  workflow_dispatch:
+ 
+jobs:
+  publish:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v3
+
+      - name: Setup Node
+        uses: actions/setup-node@v3
+        with:
+          node-version: '18.x'
+          registry-url: 'https://registry.npmjs.org'
+
+      - name: Install dependencies
+        run: npm run ci && npm run build
+        
+      - name: Publish package
+        run: npm publish
+        env:
+          NODE_AUTH_TOKEN: ${{ secrets.NPM_TOKEN }}
