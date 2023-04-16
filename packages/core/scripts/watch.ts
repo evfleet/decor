@@ -4,20 +4,21 @@ import path from "path";
 
 import { entrypoints, plugins } from "./lib";
 
-const build = async () => {
+const watch = async () => {
 	const dist = path.join(process.cwd(), "dist");
 
 	if (!fs.existsSync(dist)) {
 		fs.mkdirSync(dist);
 	}
 
-	await esbuild.build({
+	const context = await esbuild.context({
 		entryPoints: entrypoints,
 		bundle: true,
-		minify: true,
 		outdir: "dist",
 		plugins,
 	});
+
+	await context.watch();
 };
 
-build();
+watch();
