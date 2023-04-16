@@ -10,7 +10,8 @@
     "dist"
   ],
   "scripts": {
-    "build": "ts-node ./scripts/build.ts"
+    "build": "ts-node ./scripts/build.ts",
+    "build:watch": "WATCH=true ts-node ./scripts/build.ts"
   },
   "devDependencies": {
     "@types/node": "^18.0.0",

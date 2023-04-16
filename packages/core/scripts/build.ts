@@ -46,7 +46,9 @@ const build = async () => {
 		],
 	});
 
-	await context.watch();
+	if (process.env.WATCH) {
+		await context.watch();
+	}
 };
 
 build();
